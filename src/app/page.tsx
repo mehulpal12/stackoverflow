@@ -6,7 +6,7 @@ export default function Home() {
     
     <div>
       
-      <h1>hello world  tftrtrrtserwergaw4</h1>
+      <h1>hello world  </h1>
     </div>
   );
 }
