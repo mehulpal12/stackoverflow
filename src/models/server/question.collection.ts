@@ -23,22 +23,22 @@ export default async function createQuestionCollection() {
     console.log("question attribute created");
     // create indexes
 
-    // await Promise.all([
-    //     databases.createIndex(
-    //         db,
-    //         questionCollection,
-    //         "tittle",
-    //         IndexType.Fulltext,
-    //         ["title"],
-    //         ['asc']
-    //     ),
-    //     databases.createIndex(
-    //         db,
-    //         questionCollection,
-    //         "content",
-    //         IndexType.Fulltext,
-    //         ["content"],
-    //         ['asc']
-    //     ),
-    // ])
+    await Promise.all([
+        databases.createIndex(
+            db,
+            questionCollection,
+            "tittle",
+            IndexType.Fulltext,
+            ["title"],
+            ['ASC']
+        ),
+        // databases.createIndex(
+        //     db,
+        //     questionCollection,
+        //     "content",
+        //     IndexType.Fulltext,
+        //     ["content"],
+        //     ['ASC']
+        // ),
+    ])
 }

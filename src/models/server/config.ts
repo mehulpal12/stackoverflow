@@ -4,8 +4,8 @@ import env from "@/env";
 let client = new Client();
 
 client
-    .setEndpoint(process.env.NEXT_PUBLIC_APPWRITE_ENDPOINT!) // Your API Endpoint
-    .setProject(process.env.NEXT_PUBLIC_APPWRITE_PROJECT_ID!) // Your project ID
+    .setEndpoint(env.appwrite.endpoint) // Your API Endpoint
+    .setProject(env.appwrite.projectId) // Your project ID
     .setKey(env.appwrite.apikey) // Your secret API key
 ;
 
