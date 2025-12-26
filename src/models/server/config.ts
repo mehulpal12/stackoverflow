@@ -1,5 +1,5 @@
 import { Client , Avatars, Databases, Storage, Users } from "node-appwrite"
-import env from "@/env";
+import env from "@/app/env";
 
 let client = new Client();
 
